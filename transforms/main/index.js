@@ -1,17 +1,18 @@
 const { getParser } = require('codemod-cli').jscodeshift;
 const { getOptions } = require('codemod-cli');
+const templateRecast = require('ember-template-recast');
+const { transform } = require('ember-template-recast');
 
 module.exports = function transformer(file, api) {
-  const j = getParser(api);
-  const options = getOptions();
+  let { code } = transform(file.source, env => {
+    let { builders: b } = env.syntax;
 
-  return j(file.source)
-    .find(j.Identifier)
-    .forEach(path => {
-      path.node.name = path.node.name
-        .split('')
-        .reverse()
-        .join('');
-    })
-    .toSource();
-}
+    return {
+      MustacheStatement() {
+        return b.mustache(b.path('wat-wat'));
+      },
+    };
+  });
+
+  return code;
+};
