@@ -19,6 +19,7 @@ ember-holy-futuristic-template-namespacing-batman-sigil-change-codemod path/of/f
 ## Transforms
 
 <!--TRANSFORMS_START-->
+* [main](transforms/main/README.md)
 <!--TRANSFORMS_END-->
 
 ## Contributing
