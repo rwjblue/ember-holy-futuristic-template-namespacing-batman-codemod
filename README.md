@@ -8,12 +8,12 @@ A collection of codemod's for ember-holy-futuristic-template-namespacing-batman-
 To run a specific codemod from this project, you would run the following:
 
 ```
-npx ember-holy-futuristic-template-namespacing-batman-sigil-change-codemod <TRANSFORM NAME> path/of/files/ or/some**/*glob.js
+npx ember-holy-futuristic-template-namespacing-batman-sigil-change-codemod path/of/files/ or/some**/*glob.js
 
 # or
 
 yarn global add ember-holy-futuristic-template-namespacing-batman-sigil-change-codemod
-ember-holy-futuristic-template-namespacing-batman-sigil-change-codemod <TRANSFORM NAME> path/of/files/ or/some**/*glob.js
+ember-holy-futuristic-template-namespacing-batman-sigil-change-codemod path/of/files/ or/some**/*glob.js
 ```
 
 ## Transforms
