@@ -19,5 +19,7 @@ jobs:
       run: npm install --global yarn
     - name: install dependencies
       run: yarn
+    - name: lint
+      run: yarn lint
     - name: test
       run: yarn test
