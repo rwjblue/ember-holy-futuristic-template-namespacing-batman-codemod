@@ -4,6 +4,10 @@
   "keywords": [
     "codemod-cli"
   ],
+  "repository": "git@github.com:rwjblue/ember-holy-futuristic-template-namespacing-batman-sigil-change-codemod.git",
+  "license": "MIT",
+  "author": "Robert Jackson <me@rwjblue.com>",
+  "main": "index.js",
   "bin": "./bin/cli.js",
   "scripts": {
     "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls",
