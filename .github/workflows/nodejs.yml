@@ -12,11 +12,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - uses: actions/setup-node@v1
+    - uses: rwjblue/setup-volta@v1
       with:
-        node-version: 8.x
-    - name: install yarn
-      run: npm install --global yarn
+        node-version: '8'
+        yarn-version: '1'
     - name: install dependencies
       run: yarn
     - name: lint
