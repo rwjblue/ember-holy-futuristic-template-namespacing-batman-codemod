@@ -26,13 +26,13 @@ ember-holy-futuristic-template-namespacing-batman-sigil-change-codemod main path
 ---
 <a id="angle-bracket-invocation">**angle-bracket-invocation**</a>
 
-**Input** (<small>[angle-bracket-invocation.input.hbs](transforms/main/__testfixtures__/angle-bracket-invocation.input.hbs)</small>):
+**Input** (<small>[angle-bracket-invocation.input.hbs](transforms/sigil-rename/__testfixtures__/angle-bracket-invocation.input.hbs)</small>):
 ```hbs
 <Foo::Bar></Foo::Bar>
 
 ```
 
-**Output** (<small>[angle-bracket-invocation.output.hbs](transforms/main/__testfixtures__/angle-bracket-invocation.output.hbs)</small>):
+**Output** (<small>[angle-bracket-invocation.output.hbs](transforms/sigil-rename/__testfixtures__/angle-bracket-invocation.output.hbs)</small>):
 ```hbs
 <Foo$Bar></Foo$Bar>
 
@@ -40,7 +40,7 @@ ember-holy-futuristic-template-namespacing-batman-sigil-change-codemod main path
 ---
 <a id="block-component">**block-component**</a>
 
-**Input** (<small>[block-component.input.hbs](transforms/main/__testfixtures__/block-component.input.hbs)</small>):
+**Input** (<small>[block-component.input.hbs](transforms/sigil-rename/__testfixtures__/block-component.input.hbs)</small>):
 ```hbs
 {{#some-addon::component-name-here as |whatever|}}
   Text with formatting
@@ -48,7 +48,7 @@ ember-holy-futuristic-template-namespacing-batman-sigil-change-codemod main path
 
 ```
 
-**Output** (<small>[block-component.output.hbs](transforms/main/__testfixtures__/block-component.output.hbs)</small>):
+**Output** (<small>[block-component.output.hbs](transforms/sigil-rename/__testfixtures__/block-component.output.hbs)</small>):
 ```hbs
 {{#some-addon$component-name-here as |whatever|}}
   Text with formatting
@@ -58,13 +58,13 @@ ember-holy-futuristic-template-namespacing-batman-sigil-change-codemod main path
 ---
 <a id="curly-component">**curly-component**</a>
 
-**Input** (<small>[curly-component.input.hbs](transforms/main/__testfixtures__/curly-component.input.hbs)</small>):
+**Input** (<small>[curly-component.input.hbs](transforms/sigil-rename/__testfixtures__/curly-component.input.hbs)</small>):
 ```hbs
 {{addon-name::component-or-helper-name}}
 
 ```
 
-**Output** (<small>[curly-component.output.hbs](transforms/main/__testfixtures__/curly-component.output.hbs)</small>):
+**Output** (<small>[curly-component.output.hbs](transforms/sigil-rename/__testfixtures__/curly-component.output.hbs)</small>):
 ```hbs
 {{addon-name$component-or-helper-name}}
 
@@ -72,7 +72,7 @@ ember-holy-futuristic-template-namespacing-batman-sigil-change-codemod main path
 ---
 <a id="dynamic-component">**dynamic-component**</a>
 
-**Input** (<small>[dynamic-component.input.hbs](transforms/main/__testfixtures__/dynamic-component.input.hbs)</small>):
+**Input** (<small>[dynamic-component.input.hbs](transforms/sigil-rename/__testfixtures__/dynamic-component.input.hbs)</small>):
 ```hbs
 {{component runtimeString}}
 {{component "some-addon::wahtever-component-name"}}
@@ -82,7 +82,7 @@ ember-holy-futuristic-template-namespacing-batman-sigil-change-codemod main path
 
 ```
 
-**Output** (<small>[dynamic-component.output.hbs](transforms/main/__testfixtures__/dynamic-component.output.hbs)</small>):
+**Output** (<small>[dynamic-component.output.hbs](transforms/sigil-rename/__testfixtures__/dynamic-component.output.hbs)</small>):
 ```hbs
 {{component runtimeString}}
 {{component "some-addon$wahtever-component-name"}}
@@ -94,7 +94,7 @@ ember-holy-futuristic-template-namespacing-batman-sigil-change-codemod main path
 ---
 <a id="helper">**helper**</a>
 
-**Input** (<small>[helper.input.hbs](transforms/main/__testfixtures__/helper.input.hbs)</small>):
+**Input** (<small>[helper.input.hbs](transforms/sigil-rename/__testfixtures__/helper.input.hbs)</small>):
 ```hbs
 {{#if (some-addon::helper-name)}}
 
@@ -102,7 +102,7 @@ ember-holy-futuristic-template-namespacing-batman-sigil-change-codemod main path
 
 ```
 
-**Output** (<small>[helper.output.hbs](transforms/main/__testfixtures__/helper.output.hbs)</small>):
+**Output** (<small>[helper.output.hbs](transforms/sigil-rename/__testfixtures__/helper.output.hbs)</small>):
 ```hbs
 {{#if (some-addon$helper-name)}}
 
