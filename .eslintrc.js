@@ -9,4 +9,12 @@ module.exports = {
     node: true,
   },
   rules: {},
+  overrides: [
+    {
+      files: ['__tests__/**/*.js'],
+      env: {
+        jest: true,
+      },
+    },
+  ],
 };

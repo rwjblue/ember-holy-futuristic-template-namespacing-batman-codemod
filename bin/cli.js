@@ -3,7 +3,6 @@
 
 require('codemod-cli').runTransform(
   __dirname,
-  'main' /* transform name */,
-  process.argv.slice(2) /* paths or globs */,
-  'hbs' /* extensions to transform */
+  process.argv[2] /* transform name */,
+  process.argv.slice(3) /* paths or globs */
 );
