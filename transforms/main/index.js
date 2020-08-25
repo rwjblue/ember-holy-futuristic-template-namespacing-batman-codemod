@@ -1,7 +1,7 @@
-const { transform } = require('ember-template-recast');
+module.exports = function({ source /*, path*/ }, { parse, visit }) {
+  const ast = parse(source);
 
-module.exports = function transformer(file) {
-  let { code } = transform(file.source, env => {
+  return visit(ast, env => {
     let { builders: b } = env.syntax;
 
     function rewriteOrWrapComponentParam(node, b) {
@@ -55,6 +55,7 @@ module.exports = function transformer(file) {
       },
     };
   });
-
-  return code;
 };
+
+module.exports.type = 'hbs';
+
