@@ -1,7 +1,7 @@
-module.exports = function({ source /*, path*/ }, { parse, visit }) {
+module.exports = function ({ source /*, path*/ }, { parse, visit }) {
   const ast = parse(source);
 
-  return visit(ast, env => {
+  return visit(ast, (env) => {
     let { builders: b } = env.syntax;
 
     function rewriteOrWrapComponentParam(node, b) {
@@ -58,4 +58,3 @@ module.exports = function({ source /*, path*/ }, { parse, visit }) {
 };
 
 module.exports.type = 'hbs';
-
