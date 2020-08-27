@@ -1,19 +1,19 @@
-# ember-holy-futuristic-template-namespacing-batman-sigil-change-codemod
+# ember-holy-futuristic-template-namespacing-batman-codemod
 
 
-A collection of codemods for ember-holy-futuristic-template-namespacing-batman-sigil-change-codemod.
+A collection of codemods for ember-holy-futuristic-template-namespacing-batman-codemod.
 
 ## Usage
 
 To run a specific codemod from this project, you would run the following:
 
 ```
-npx ember-holy-futuristic-template-namespacing-batman-sigil-change-codemod <TRANSFORM NAME> path/of/files/ or/some**/*glob.js
+npx ember-holy-futuristic-template-namespacing-batman-codemod <TRANSFORM NAME> path/of/files/ or/some**/*glob.js
 
 # or
 
-yarn global add ember-holy-futuristic-template-namespacing-batman-sigil-change-codemod
-ember-holy-futuristic-template-namespacing-batman-sigil-change-codemod <TRANSFORM NAME> path/of/files/ or/some**/*glob.js
+yarn global add ember-holy-futuristic-template-namespacing-batman-codemod
+ember-holy-futuristic-template-namespacing-batman-codemod <TRANSFORM NAME> path/of/files/ or/some**/*glob.js
 ```
 
 ## Local Usage
