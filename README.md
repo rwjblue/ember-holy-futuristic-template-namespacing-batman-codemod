@@ -24,6 +24,7 @@ node ./bin/cli.js <TRANSFORM NAME> path/of/files/ or/some**/*glob.js
 ## Transforms
 
 <!--TRANSFORMS_START-->
+* [ensure-template-only-has-backing-class](transforms/ensure-template-only-has-backing-class/README.md)
 * [sigil-rename](transforms/sigil-rename/README.md)
 <!--TRANSFORMS_END-->
 
