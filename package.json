@@ -1,12 +1,12 @@
 {
-  "name": "ember-holy-futuristic-template-namespacing-batman-sigil-change-codemod",
+  "name": "ember-holy-futuristic-template-namespacing-batman-codemod",
   "version": "1.0.1",
   "keywords": [
     "codemod-cli"
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:rwjblue/ember-holy-futuristic-template-namespacing-batman-sigil-change-codemod.git"
+    "url": "git@github.com:rwjblue/ember-holy-futuristic-template-namespacing-batman-codemod.git"
   },
   "bin": "./bin/cli.js",
   "scripts": {

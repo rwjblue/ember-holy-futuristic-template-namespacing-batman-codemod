@@ -4,7 +4,7 @@
 ## Usage
 
 ```
-npx ember-holy-futuristic-template-namespacing-batman-sigil-change-codemod main path/of/files/ or/some**/*glob.js
+npx ember-holy-futuristic-template-namespacing-batman-codemod main path/of/files/ or/some**/*glob.js
 
 # or
 
