@@ -1,15 +1,10 @@
-# main
+# sigil-rename
 
 
 ## Usage
 
 ```
-npx ember-holy-futuristic-template-namespacing-batman-codemod main path/of/files/ or/some**/*glob.js
-
-# or
-
-yarn global add ember-holy-futuristic-template-namespacing-batman-sigil-change-codemod
-ember-holy-futuristic-template-namespacing-batman-sigil-change-codemod main path/of/files/ or/some**/*glob.js
+npx ember-holy-futuristic-template-namespacing-batman-codemod sigil-rename path/of/files/ or/some**/*glob.js
 ```
 
 ## Input / Output
